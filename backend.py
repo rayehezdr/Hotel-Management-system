@@ -183,6 +183,17 @@ def add_room(room_number, capacity, price, status, info):
     finally:
         conn.close()
 
+def get_user(customer_id):
+    conn = connect()
+    cur = conn.cursor()
+    cur.execute(
+        "SELECT name, last_name, national_id, contact_number FROM Customers WHERE customer_id=?",
+        (customer_id,)
+    )
+    row = cur.fetchone()
+    conn.close()
+    return row
+
 def get_all_reservations():
     conn = connect()
     cur = conn.cursor()
