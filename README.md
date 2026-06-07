@@ -7,9 +7,9 @@ A simple hotel reservation app built with Streamlit and SQLite. Customers can si
 Python, Streamlit, SQLite, pandas.
 
 ## Project Structure
-.
-├── app.py          # Streamlit frontend
-├── backend.py      # Database logic
+
+├── app.py          # Streamlit frontend  
+├── backend.py      # Database logic  
 └── database.sql    # Schema
 
 ## Setup
